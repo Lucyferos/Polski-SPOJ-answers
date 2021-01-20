@@ -1,0 +1,15 @@
+try:
+    for i in range(0,int(input())):
+        palidrome = 0
+        a = input()
+        count = 0
+        while (palidrome != 1):
+            b = str(a)[::-1]
+            if str(a)==str(b):
+                print(str(a),count)
+                palidrome=1
+            else:
+                a = int(a)+ int(b)
+                count +=1
+except:
+    pass
